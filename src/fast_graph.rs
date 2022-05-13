@@ -27,10 +27,10 @@ use crate::constants::{EdgeId, NodeId, INVALID_EDGE};
 pub struct FastGraph {
     num_nodes: usize,
     pub(crate) ranks: Vec<usize>,
-    pub(crate) edges_fwd: Vec<FastGraphEdge>,
+    pub edges_fwd: Vec<FastGraphEdge>,
     pub(crate) first_edge_ids_fwd: Vec<EdgeId>,
 
-    pub(crate) edges_bwd: Vec<FastGraphEdge>,
+    pub edges_bwd: Vec<FastGraphEdge>,
     pub(crate) first_edge_ids_bwd: Vec<EdgeId>,
 }
 
